@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import {RouterLink} from 'vue-router';
+import Button from "../button/Button.vue";
 
 interface Link{
     url: string
     title: string
 }
+
 
 const menuLinks: Link[] = [
   {
@@ -29,7 +31,7 @@ const menuLinks: Link[] = [
                     <img
                     srcSet="/images/Logo.png 2x"
                     alt="Lion-Blogging"
-                    className="logo block max-w-[50px]"
+                    className="logo block max-w-[91px]"
                     />
                 </RouterLink>
                 <ul className="menu flex items-center gap-x-[20px] ml-10 list-none font-medium">
@@ -40,7 +42,7 @@ const menuLinks: Link[] = [
                 <div className="search flex py-[15px] px-[25px] items-center border-[1.7px] border-[#ccc] rounded-lg w-full max-w-[320px] ml-auto mr-5">
                     <input
                     type="text"
-                    className="search-input flex-1 pr-[10px]"
+                    class="search-input flex-1 pr-[10px]"
                     placeholder="Search posts..."
                     />
                     <svg
@@ -49,7 +51,7 @@ const menuLinks: Link[] = [
                     viewBox="0 0 18 17"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="search-icon"
+                    class="search-icon"
                     >
                     <ellipse
                         cx="7.66669"
@@ -73,6 +75,7 @@ const menuLinks: Link[] = [
                     />
                     </svg>
                 </div>
+                <Button type="button" kind="primary">Sign Up</Button>
             </div>
         </div>
     </div>
